@@ -1,0 +1,7 @@
+{
+  "name": "greenpeace-ilustratudo",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.2"
+  }
+}
