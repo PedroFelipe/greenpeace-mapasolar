@@ -4,6 +4,13 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
+var deploy = require('gulp-gh-pages');
+ 
+gulp.task('deploy', function () {
+  return gulp.src('dist/**/*')
+    .pipe(deploy(options));
+});
+
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
     .pipe($.plumber())
