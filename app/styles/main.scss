@@ -98,18 +98,45 @@ section#solarmap4 {
 #content,
 #diy {
   .wrapper {
-    background-color: #4e211e;
-    padding: 200px 0;
-    margin: 0 15px;
+    display: block;
+    float: left;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+  }
+}
+
+/* Content */
+#content {
+  .wrapper {
+    top: -325px;
+  }
+
+  p {
+    color: #fff;
+    padding: 0 60px;
   }
 }
 
 /* Do it yourself */
 #diy {
+  .wrapper {
+    background-color: #4e211e;
+    top: -1px;
+  }
+
   h1,
   p {
     background-color: #d49a42;
     color: #000;
+    display: inline-block;
+    margin: 0 50px 0;
+    padding: 15px;
+  }
+
+  h1 {
+    padding-top: 15px;
+    padding-bottom: 5px;
   }
 
   h1.support {
