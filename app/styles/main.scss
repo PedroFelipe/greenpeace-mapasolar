@@ -76,6 +76,11 @@ section#map3 {
     line-height: 30px;
     padding: 5px 10px;
 
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
     &.escola-eduardo-schutz {
       bottom: 415px;
       right: 200px;
