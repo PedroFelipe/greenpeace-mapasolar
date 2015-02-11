@@ -60,6 +60,8 @@ section#map2 {
 }
 
 section#map3 {
+  position: relative;
+
   .bg {
     background-image: url('../images/mapa3.jpg');
     height: 1034px;
@@ -71,8 +73,63 @@ section#map3 {
     font-family: 'Bebas Neue', sans-serif;
     position: absolute;
     font-size: 38px;
-    line-height: 1;
-    padding: 7px;
+    line-height: 30px;
+    padding: 5px 10px;
+
+    &.escola-eduardo-schutz {
+      bottom: 415px;
+      right: 200px;
+    }
+
+    &.eletrosul {
+      bottom: 485px;
+      left: 450px;
+    }
+
+    &.cidade-azul {
+      bottom: 490px;
+      right: 270px;
+    }
+
+    &.raia-olimpica-da-usp {
+      bottom: 575px;
+      right: 110px;
+    }
+
+    &.maracana {
+      bottom: 655px;
+      right: 180px;
+    }
+
+    &.escola-espaco-letrado {
+      bottom: 700px;
+      left: 600px;
+    }
+
+    &.barco-solar {
+      bottom: 730px;
+      right: 190px;
+    }
+
+    &.pousada-comunitaria {
+      bottom: 965px;
+      left: 490px;
+    }
+
+    &.juazeiro-bahia {
+      bottom: 1000px;
+      right: 225px;
+    }
+
+    &.cinesolar {
+      bottom: 1035px;
+      left: 235px;
+    }
+
+    &.fernando-de-noronha {
+      bottom: 1135px;
+      right: 220px;
+    }
   }
 }
 
