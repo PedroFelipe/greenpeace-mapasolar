@@ -50,6 +50,8 @@ section#map {
 }
 
 section#map2 {
+  margin-top: -2px;
+  
   .bg {
     background-image: url('../images/mapa2.jpg');
     height: 1007px;
@@ -91,8 +93,8 @@ section#map3 {
     display: block;
     float: left;
     position: absolute;
-    left: 30px;
-    right: 30px;
+    left: 15px;
+    right: 15px;
   }
 }
 
@@ -110,8 +112,6 @@ section#map3 {
 
 /* Do it yourself */
 #diy {
-  margin-top: -2px;
-
   .wrapper {
     top: -345px;
   }
