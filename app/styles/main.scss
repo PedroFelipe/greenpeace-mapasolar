@@ -4,6 +4,7 @@
 // endbower
 
 body {
+  font-size: 18px;
   font-family: 'Droid Serif', sans-serif;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,10 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Sections */
-header#solarmap,
-section#solarmap2,
-section#solarmap4,
-section#solarmap3 {
+section#map,
+section#map2,
+section#map3 {
   max-width: 1170px;
   padding: 0 30px;
   margin: 0 auto;
@@ -42,54 +42,43 @@ section#solarmap3 {
   }
 }
 
-header#solarmap {
+section#map {
   .bg {
-    background-image: url('../images/mapa-solar-1.jpg');
-    height: 530px;
+    background-image: url('../images/mapa1.jpg');
+    height: 1007px;
   }
 }
 
-section#solarmap2 {
+section#map2 {
   .bg {
-    background-image: url('../images/mapa-solar-2.jpg');
-    height: 883px;
+    background-image: url('../images/mapa2.jpg');
+    height: 1007px;
   }
 }
 
-section#solarmap3 {
+section#map3 {
   .bg {
-    background-image: url('../images/mapa-solar-3.jpg');
-    height: 763px;
+    background-image: url('../images/mapa3.jpg');
+    height: 1007px;
   }
 }
 
-section#solarmap4 {
-  .bg {
-    background-image: url('../images/mapa-solar-4.jpg');
-    height: 813px;
-  }
-}
 
 @media 
 (-webkit-min-device-pixel-ratio: 1.5), 
 (min-resolution: 144dpi){ 
-  header#solarmap .bg {
-    background-image: url('../images/mapa-solar-1@2x.jpg');
+  section#map .bg {
+    background-image: url('../images/mapa1@2x.jpg');
     background-size: cover;
   }
 
-  section#solarmap2 .bg {
-    background-image: url('../images/mapa-solar-2@2x.jpg');
+  section#map2 .bg {
+    background-image: url('../images/mapa2@2x.jpg');
     background-size: cover;
   }
 
-  section#solarmap3 .bg {
-    background-image: url('../images/mapa-solar-3@2x.jpg');
-    background-size: cover;
-  }
-
-  section#solarmap4 .bg {
-    background-image: url('../images/mapa-solar-4@2x.jpg');
+  section#map3 .bg {
+    background-image: url('../images/mapa3@2x.jpg');
     background-size: cover;
   }
 }
@@ -98,6 +87,7 @@ section#solarmap4 {
 #content,
 #diy {
   .wrapper {
+    background-color: transparent;
     display: block;
     float: left;
     position: absolute;
@@ -109,7 +99,7 @@ section#solarmap4 {
 /* Content */
 #content {
   .wrapper {
-    top: -325px;
+    top: -800px;
   }
 
   p {
@@ -120,26 +110,113 @@ section#solarmap4 {
 
 /* Do it yourself */
 #diy {
+  margin-top: -2px;
+
   .wrapper {
-    background-color: #4e211e;
-    top: -1px;
+    top: -345px;
   }
 
   h1,
   p {
-    background-color: #d49a42;
-    color: #000;
+    background-color: #d49b43;
+    color: #222;
     display: inline-block;
     margin: 0 50px 0;
     padding: 15px;
   }
 
   h1 {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 5px;
+    padding-right: 20px;
   }
 
   h1.support {
     color: #936037;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1199px) {
+  body {
+    font-size: 16px;
+  }
+
+  section#map,
+  section#map2,
+  section#map3 {
+    max-width: 970px;
+
+    .bg {
+      height: 830px;
+    }
+  }
+
+  #content {
+    .wrapper {
+      top: -660px;
+    }
+  }
+
+  #diy {
+    .wrapper {
+      top: -260px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    font-size: 14px;
+  }
+
+  section#map,
+  section#map2,
+  section#map3 {
+    max-width: 750px;
+
+    .bg {
+      height: 636px;
+    }
+  }
+
+  #content {
+    .wrapper {
+      top: -500px;
+    }
+
+    p {
+      padding: 0 15px;
+    }
+  }
+
+  #diy {
+    .wrapper {
+      top: -95px;
+    }
+
+    h1,
+    p {
+      margin: 0 5px 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+
+    p {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  section#map,
+  section#map2,
+  section#map3 {
+    max-width: 100%;
   }
 }
