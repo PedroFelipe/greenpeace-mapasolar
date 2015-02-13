@@ -1,5 +1,6 @@
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 @import "fonts.scss";
 // endbower
 
@@ -341,9 +342,100 @@ section#map3 {
 }
 
 @media (max-width: 767px) {
+  body {
+    font-size: 13px;
+  }
+
   section#map,
   section#map2,
   section#map3 {
-    max-width: 100%;
+    width: 640px;
+    height: 565px;
+
+    .bg {
+      width: 640px;
+      height: 565px;
+    }
+
+    a {
+      display: none;
+    }
+  }
+
+  .wrapper {
+    top: 125px;
+    text-align: center;
+
+    & > p {
+      padding: 0;
+    }
+
+    .diy {
+      h1,
+      p {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  section#map {
+    width: 480px;
+    height: 1060px;
+    @include background-image(linear-gradient(#BD3B19, #6B281F));
+
+    .bg {
+      background-image: url('../images/mapa1-mobile.jpg');
+      background-size: cover;
+      width: 480px;
+      height: 123px;
+    }
+  }
+
+  section#map2,
+  section#map3 {
+    width: 480px;
+    height: 424px;
+
+    .bg {
+      width: 480px;
+      height: 424px;
+    }
+  }
+
+  .wrapper {
+    top: 100px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  section#map {
+    width: 320px;
+    height: 1550px;
+    @include background-image(linear-gradient(#BD3B19, #792B1F));
+
+    .bg {
+      background-image: url('../images/mapa1-mobile-320.jpg');
+      background-size: cover;
+      width: 320px;
+      height: 100px;
+    }
+  }
+
+  section#map2,
+  section#map3 {
+    width: 320px;
+    height: 283px;
+
+    .bg {
+      width: 320px;
+      height: 283px;
+    }
+  }
+
+  .wrapper {
+    top: 75px;
   }
 }

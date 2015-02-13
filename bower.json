@@ -2,6 +2,7 @@
   "name": "greenpeace-ilustratudo",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.3.2"
+    "bootstrap-sass-official": "~3.3.2",
+    "bourbon": "~4.2.0"
   }
 }
