@@ -293,6 +293,66 @@ section#map3 {
   .wrapper {
     top: 180px;
   }
+
+  section#map3 a {
+    font-size: 34px;
+    padding: 3px 8px;
+
+    &.escola-eduardo-schutz {
+      bottom: 345px;
+      right: 130px;
+    }
+
+    &.eletrosul {
+      bottom: 410px;
+      left: 360px;
+    }
+
+    &.cidade-azul {
+      bottom: 415px;
+      right: 210px;
+    }
+
+    &.raia-olimpica-da-usp {
+      bottom: 475px;
+      right: 75px;
+    }
+
+    &.maracana {
+      bottom: 550px;
+      right: 135px;
+    }
+
+    &.escola-espaco-letrado {
+      bottom: 585px;
+      left: 470px;
+    }
+
+    &.barco-solar {
+      bottom: 605px;
+      right: 155px;
+    }
+
+    &.pousada-comunitaria {
+      bottom: 805px;
+      left: 400px;
+    }
+
+    &.juazeiro-bahia {
+      bottom: 830px;
+      right: 180px;
+    }
+
+    &.cinesolar {
+      bottom: 860px;
+      left: 185px;
+    }
+
+    &.fernando-de-noronha {
+      bottom: 950px;
+      right: 185px;
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -339,6 +399,66 @@ section#map3 {
       }
     }
   }
+
+  section#map3 a {
+    font-size: 26px;
+    line-height: 23px;
+
+    &.escola-eduardo-schutz {
+      bottom: 265px;
+      right: 105px;
+    }
+
+    &.eletrosul {
+      bottom: 315px;
+      left: 280px;
+    }
+
+    &.cidade-azul {
+      bottom: 320px;
+      right: 160px;
+    }
+
+    &.raia-olimpica-da-usp {
+      bottom: 365px;
+      right: 45px;
+    }
+
+    &.maracana {
+      bottom: 420px;
+      right: 105px;
+    }
+
+    &.escola-espaco-letrado {
+      bottom: 450px;
+      left: 370px;
+    }
+
+    &.barco-solar {
+      bottom: 465px;
+      right: 120px;
+    }
+
+    &.pousada-comunitaria {
+      bottom: 620px;
+      left: 310px;
+    }
+
+    &.juazeiro-bahia {
+      bottom: 640px;
+      right: 125px;
+    }
+
+    &.cinesolar {
+      bottom: 665px;
+      left: 140px;
+    }
+
+    &.fernando-de-noronha {
+      bottom: 730px;
+      right: 135px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -356,10 +476,6 @@ section#map3 {
       width: 640px;
       height: 565px;
     }
-
-    a {
-      display: none;
-    }
   }
 
   .wrapper {
@@ -376,6 +492,66 @@ section#map3 {
         margin-left: 0;
         margin-right: 0;
       }
+    }
+  }
+
+  section#map3 a {
+    font-size: 23px;
+    line-height: 20px;
+
+    &.escola-eduardo-schutz {
+      bottom: 265px;
+      right: 105px;
+    }
+
+    &.eletrosul {
+      bottom: 315px;
+      left: 280px;
+    }
+
+    &.cidade-azul {
+      bottom: 320px;
+      right: 160px;
+    }
+
+    &.raia-olimpica-da-usp {
+      bottom: 365px;
+      right: 45px;
+    }
+
+    &.maracana {
+      bottom: 420px;
+      right: 105px;
+    }
+
+    &.escola-espaco-letrado {
+      bottom: 450px;
+      left: 370px;
+    }
+
+    &.barco-solar {
+      bottom: 465px;
+      right: 120px;
+    }
+
+    &.pousada-comunitaria {
+      bottom: 620px;
+      left: 310px;
+    }
+
+    &.juazeiro-bahia {
+      bottom: 640px;
+      right: 125px;
+    }
+
+    &.cinesolar {
+      bottom: 665px;
+      left: 140px;
+    }
+
+    &.fernando-de-noronha {
+      bottom: 730px;
+      right: 135px;
     }
   }
 }
