@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass-official": "~3.3.2",
-    "bourbon": "~4.2.0"
+    "bourbon": "~4.2.0",
+    "css-element-queries": "~0.0.2"
   }
 }
